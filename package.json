@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "gulp dev",
     "build": "gulp build",
-    "start": "gulp start"
+    "start": "gulp start",
+    "clean": "gulp clean"
   },
   "keywords": [],
   "author": "",

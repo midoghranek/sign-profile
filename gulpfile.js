@@ -41,7 +41,7 @@ const dev = () => {
   });
 };
 
-const cleanBuild = (done) => {
+const clean = (done) => {
   rimraf("./build", done);
 };
 
@@ -72,10 +72,13 @@ const start = () => {
 exports.dev = parallel(image, watchTask, dev);
 
 // 2. gulp build
-exports.build = series(cleanBuild, build);
+exports.build = series(clean, build);
 
 // 3. gulp start
 exports.start = start;
 
 // 4. gulp default
-exports.default = series(cleanBuild, build, start);
+exports.default = series(clean, build, start);
+
+// 5. gulp clean
+exports.clean = clean;
