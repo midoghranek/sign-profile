@@ -1,0 +1,25 @@
+// flex box
+@mixin flex($space) {
+  display: flex;
+  justify-content: $space;
+  align-items: center;
+}
+
+// screen sizes
+$screens: (
+  "mobile-s": "325px",
+  "mobile-m": "375px",
+  "mobile": "425px",
+  "tablet": "768px",
+  "laptop-s": "1024px",
+  "laptop-m": "1280px",
+  "laptop": "1366px",
+);
+
+// Responsive design system
+@mixin screen($device) {
+  $width: map-get($screens, $device);
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}

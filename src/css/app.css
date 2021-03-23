@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css");
+body {
+  font-family: "Droid Arabic Naskh";
+  color: #333333;
+  padding: 0;
+  margin: 0;
+}
+body * {
+  box-sizing: content-box;
+}
+body .content {
+  position: relative;
+  z-index: 1;
+  max-width: 1140px;
+  margin: auto;
+}
+body .content main {
+  height: calc(100vh - 87px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  body .content main {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 768px) {
+  body .content main {
+    height: auto;
+    flex-direction: column;
+  }
+}
+body .content main section {
+  width: calc(50% - 80px);
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  body .content main section {
+    width: calc(50% - 30px);
+  }
+}
+@media (max-width: 768px) {
+  body .content main section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: calc(100vh - 87px);
+  width: 100%;
+  display: flex;
+  z-index: 0;
+}
+@media (max-width: 768px) {
+  .bg {
+    height: auto;
+    flex-direction: column;
+  }
+}
+.bg .side {
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .bg .side {
+    width: 100%;
+    height: 100vh;
+  }
+}
+.bg .side.yellow {
+  background-color: #f7d65c;
+}
+.bg .side.blue {
+  background-color: #20639c;
+}
+
+.login {
+  color: #fff;
+}
+.login h2 {
+  font-size: 28px;
+  margin-top: 0;
+}
+.login form input {
+  border: 1px solid #9fbed8;
+  background-color: transparent;
+  width: 100%;
+  height: 45px;
+  margin-bottom: 13px;
+  border-radius: 4px;
+  padding: 0 10px;
+  color: white;
+}
+.login form input::placeholder {
+  color: white;
+  font-family: "Droid Arabic Naskh";
+  font-size: 18px;
+}
+.login form button {
+  margin-top: 27px;
+  width: 100%;
+  height: 45px;
+  background-color: transparent;
+  border-radius: 30px;
+  border: 1px solid #f7d65c;
+  box-shadow: none;
+  font-size: 16px;
+  font-family: "Droid Arabic Naskh";
+  color: #f7d65c;
+}
+
+.profile h2 {
+  font-size: 30px;
+  color: #20639c;
+  margin-top: 21px;
+  margin-bottom: 3px;
+}
+.profile p {
+  margin-top: 38px;
+  font-size: 16px;
+  line-height: 27px;
+  margin-bottom: 45px;
+}
+.profile .social {
+  width: 201px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  height: 87px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .credits p {
+  margin: 0;
+  text-align: center;
+  font-size: 16px;
+  line-height: 17px;
+}
+footer .credits i {
+  height: 10px;
+  display: block;
+}

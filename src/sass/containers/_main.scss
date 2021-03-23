@@ -1,0 +1,38 @@
+body {
+  font-family: $font;
+  color: $textColor;
+  padding: 0;
+  margin: 0;
+  * {
+    box-sizing: content-box;
+  }
+  .content {
+    position: relative;
+    z-index: 1;
+    max-width: 1140px;
+    margin: auto;
+    main {
+      height: $contentHeight;
+      @include flex(space-between);
+      @include screen(laptop-s) {
+        padding: 0 40px;
+      }
+      @include screen(tablet) {
+        height: auto;
+        flex-direction: column;
+      }
+      section {
+        width: calc(50% - 80px);
+        text-align: center;
+        @include screen(laptop-s) {
+          width: calc(50% - 30px);
+        }
+        @include screen(tablet) {
+          height: 100vh;
+          @include flex(center);
+          width: 100%;
+        }
+      }
+    }
+  }
+}

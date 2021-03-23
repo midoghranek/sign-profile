@@ -1,0 +1,16 @@
+footer {
+  height: 87px;
+  @include flex(center);
+  .credits {
+    p {
+      margin: 0;
+      text-align: center;
+      font-size: 16px;
+      line-height: 17px;
+    }
+    i {
+      height: 10px;
+      display: block;
+    }
+  }
+}

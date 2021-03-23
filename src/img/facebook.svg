@@ -1,0 +1,17 @@
+<svg id="Group_6" data-name="Group 6" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3b5999;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <circle id="Oval_Copy_2" data-name="Oval Copy 2" class="cls-1" cx="28" cy="28" r="28"/>
+  <g id="facebook" transform="translate(20 13)">
+    <path id="Path" class="cls-2" d="M13.079,4.981H16V.211A40.2,40.2,0,0,0,11.744,0C2.5,0,5.017,9.813,4.649,11.25H0v5.333H4.648V30h5.7V16.584h4.46l.708-5.332H10.344C10.6,7.721,9.33,4.981,13.079,4.981Z"/>
+  </g>
+</svg>

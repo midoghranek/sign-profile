@@ -1,0 +1,19 @@
+.profile {
+  h2 {
+    font-size: 30px;
+    color: $secondColor;
+    margin-top: 21px;
+    margin-bottom: 3px;
+  }
+  p {
+    margin-top: 38px;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 45px;
+  }
+  .social {
+    width: 201px;
+    margin: auto;
+    @include flex(space-between);
+  }
+}
